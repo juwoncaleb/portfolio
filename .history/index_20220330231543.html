@@ -187,7 +187,7 @@
                 <p>
                   the future internet we’re moving towards, is a decentralized internet. Under Web3, the internet is shared online and governed by the collective “we,” rather than owned by centralized entities. The Web3 world is one that has open-source protocols at its foundation.
                   <br>
-                  <button><a href="https://medium.com/@calebomojuwon/web3-5f33ae9210a7">READ
+                  <button><a href="https://www.indiehackers.com/post/paradigms-of-programming-1b2dc51902">READ
                       MORE</a></button>
                 </p>
               </div>
@@ -200,8 +200,52 @@
                 </div>
                 <h3>SCALE FROM ZERO TO  <br> MILLIONS OF USER</h3>
                 <p> With the growth of the user base, one server is not enough, and we need multiple servers: one for web/mobile traffic, the other for the database Separating web/mobile traffic (web tier) and database (data tier) servers allow them to be scaled independently.
+                  TYPES OF DATABASE
+                  Relational database (SQL)
+                  They store data in tables and row
+                  non-relational database
+                  This database is grouped into key-value, graph , column, and document stores
+                  WHY USE NON RELATIONAL DATABASE
+                  Your application requires super-low latency. • Your data are unstructured, or you do not have any relational data. • You only need to serialize and deserialize data (JSON, XML, YAML, etc.). • You need to store a massive amount of data.
+                  TYPE OF SCALING
+                  VERTICAL SCALING (SCALE-UP)
+                  This refers to adding more CPU & RAM to the server. This is best used when the Traffic to such a website is very low.
+                  DISADVANTAGE
+                  It is impossible to add unlimited CPU & MEMORY TO A SERVER
+                  It is riskier to use just one server for your business, because if one server goes down, so does your business
+                  HORIZONTAL SCALING
+                  In large cooperation with a heavy flow of traffic, this is a more desirable method of scaling, due to the limitations of vertical scaling
+                  LOAD BALANCER
+                  The role of a load balancer is to evenly distribute the traffic. So that no one server is overworked, and crashes
+                  DATABASE REPLICATION
+                  Database replication can be used in many database management systems, usually with a master/slave relationship between the original (master) and the copies (slaves)”
+                  MASTER DATABASE — it only supports the write operations,
+                  SLAVE DATABASE — it gets copies of data from the master database and only supports the read operations.
+                  In most application, it requires more of READ, than WRITE.So the number of slave database is always more than the number of the master database.
+                  BUT WHY DO WE REPLICATE DATABASE
+                  The slave and master relationship improves performance as more quires are processed in parallel
+                  . It improves the availability as if one server is down another sever will host the website
+                  SERVER FAILURE
+                  Slave database failure
+                  If the slave database goes down, the master database will act as a temporary slave database until the issue is resolved. However, if there are multiple slave databases, another healthy slave database replaces this and takes the traffic that was originally redirected to the failed slave database.
+                  Master database failure
+                  Once this occurs, a slave database will immediately take the role of the failed master database, although this is a much more complicated process as the new slave database may not be updated with the recent data in the failed master database. This issue however can be solved by
+                  RUNNING A DATA RECOVERY SCRIPT
+                  MULTI-MASTERS
+                  CIRCULAR REPLICATION
+                  
+                  IMPROVING LOAD/RESPONSE TIME
+                  CACHE
+                  It is a temporary storage area that stores the result of an expensive response or frequently accessed data in memory.
+                  CACHE TIER
+                  This is a temporary data store layer, different from a database
+                  Benefits
+                  Improves the system performance
+                  Reduce database workload
+                  Ability to reduce database workload
+                  
                   <br>
-                  <button><a href="https://medium.com/@calebomojuwon/scale-from-zero-to-millions-of-user-5406d13334ce">READ
+                  <button><a href="https://www.indiehackers.com/post/technical-interview-questions-812f77429b">READ
                       MORE</a></button>
                 </p>
               </div>
@@ -419,15 +463,15 @@
 
                 <div class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
 
-                  <a href="https://sendcoins.netlify.app/" class="portfolio-item isotope-item gsap-reveal-img">
+                  <a href="https://news-reader.herokuapp.com/" class="portfolio-item isotope-item gsap-reveal-img">
                     <div class="overlay">
                       <span class="wrap-icon icon-photo2"></span>
                       <div class="portfolio-item-content">
-                        <h3>SEND COINS</h3>
-                        <p>REACT.JS || SOLIDITY || JAVASCRIPT || ETHER ||</p>
+                        <h3>NEWS READER USING ARTITIFICAL INTELLIGENCE</h3>
+                        <p>REACT.JS || ALAN || JAVASCRIPT || MATERIAL-UI ||</p>
                       </div>
                     </div>
-                    <img src="./images/send.png" class="lazyload  img-fluid" alt="Images" />
+                    <img src="./images/AI.png" class="lazyload  img-fluid" alt="Images" />
                   </a>
 
                 </div>
